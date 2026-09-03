@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: playtest-log-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: playtest_log
+      MYSQL_USER: playtest
+      MYSQL_PASSWORD: playtest
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - playtest_log_data:/var/lib/mysql
+
+volumes:
+  playtest_log_data:
