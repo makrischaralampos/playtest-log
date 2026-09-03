@@ -87,8 +87,7 @@ Errors return a consistent shape:
 
 ## Design decisions
 
-A few choices made deliberately for this project's actual scope (solo use, one day
-to build), worth stating rather than leaving implicit:
+A few choices made deliberately for this project's actual scope (solo use), worth stating rather than leaving implicit:
 
 - **No auth.** Single-operator tool, not multi-tenant. Adding auth would be solving
   a problem this project doesn't have.
